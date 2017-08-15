@@ -1,2 +1,2 @@
-# w3d-page
-Web page for the w3d project
+# livre-example
+Example server configuration for the Livre project.

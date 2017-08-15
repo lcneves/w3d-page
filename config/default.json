@@ -1,0 +1,15 @@
+{
+  "config": {
+    "themes": [
+      {
+        "name": "liberty",
+        "subdomain": "3d",
+        "baseDirectory": "livre-liberty"
+      },
+      {
+        "name": "liberty-flat",
+        "subdomain": "flat"
+      }
+    ]
+  }
+}
