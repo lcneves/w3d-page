@@ -1,7 +1,7 @@
 {
   "name": "w3d-page",
   "version": "0.0.0",
-  "description": "",
+  "description": "Web page for the w3d project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,23 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lcneves/livre-example.git"
+    "url": "git+https://github.com/lcneves/w3d-page.git"
   },
   "keywords": [
-    "Livre",
-    "example"
+    "w3d",
+    "framework",
+    "front-end",
+    "web development",
+    "3d"
   ],
   "author": "Lucas Neves <lcneves@gmail.com> (https://www.lcneves.com)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/lcneves/livre-example/issues"
+    "url": "https://github.com/lcneves/w3d-page/issues"
   },
-  "homepage": "https://github.com/lcneves/livre-example#readme",
+  "homepage": "https://github.com/lcneves/w3d-page#readme",
   "dependencies": {
-    "config": "^1.25.1",
-    "livre-liberty": "latest",
-    "liberty-flat": "latest",
-    "livre-server": "latest"
+    "config": "^1.25.1"
   },
   "devDependencies": {
     "eslint": "latest"

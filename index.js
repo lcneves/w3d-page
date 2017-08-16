@@ -2,18 +2,17 @@
  * index.js
  * Copyright 2017 Lucas Neves <lcneves@gmail.com>
  *
- * A sample server setup for the Livre project.
- * Reads configuration from the file './config/default.json'.
+ * Server configuration for the w3d webpage.
  */
 
 'use strict';
 
 const path = require('path');
+const app = require('express')();
 
-var config = require('config').get('config');
 
-config.themesDirectory = config.themesDirectory ||
-  path.join(__dirname, 'node_modules');
+const config = require('config').get('config');
+const PORT = config.port || 80;
 
 require('livre-server')(config);
 
