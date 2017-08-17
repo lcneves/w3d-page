@@ -2,8 +2,7 @@
  * index.js
  * Copyright 2017 Lucas Neves <lcneves@gmail.com>
  *
- * Liberty theme for Livre's Livre3D engine.
- * Uses three.js and react-canvas.
+ * Theme for w3d web page.
  */
 
 'use strict';
@@ -23,8 +22,6 @@ const lights = [
   //{ type: 'point' }
 ];
 
-const templates = require('./lib/templates.js');
-
 const theme = {
   stylesheets: stylesheets,
   resources: resources,
@@ -32,9 +29,16 @@ const theme = {
   background: 0xffffff,
   worldWidth: 100,
   hfov: 30,
-  nearFarRatio: 0.25,
+  nearFarRatio: 0.25
+};
+
+const templates = require('./lib/templates.js');
+
+const app = {
+  theme: theme,
   templates: templates
 };
 
-// All set, let's initialize the engine!
-require('w3d')({ theme: theme });
+const w3d = require('w3d')(app);
+
+require('./client.js')(w3d);

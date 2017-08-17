@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/lcneves/w3d-page#readme",
   "dependencies": {
-    "config": "^1.25.1"
+    "config": "^1.25.1",
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {
     "eslint": "latest"
