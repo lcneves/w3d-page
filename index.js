@@ -21,7 +21,6 @@ app.set('views', path.join(__dirname, 'views'))
 // Constant definitions
 const PORT = config.port || 80;
 const TITLE = 'w3d';
-const THEME_DIR = config.themeDirectory || path.join(__dirname, 'theme');
 const STATIC_PATH = '/public';
 const PUBLIC_DIR = 'public';
 
@@ -31,9 +30,7 @@ const renderOptions = {
 };
 
 // Routing begins here
-app.use(STATIC_PATH, express.static(path.join(
-  THEME_DIR, PUBLIC_DIR
-)));
+app.use(STATIC_PATH, express.static(path.join(__dirname, PUBLIC_DIR)));
 
 app.get('*', function (req, res) {
   res.render('index', renderOptions);

@@ -1,0 +1,59 @@
+body {
+  padding: 1rem 2rem;
+}
+nav {
+  padding: 1.5rem;
+  background-color: #eeffee;
+}
+.text-start {
+  text-align: start;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-justify-all {
+  text-align: justify-all;
+}
+.row {
+  flex-direction: row;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: flex-center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+#logo {
+  color: #00aa00;
+  font-weight: bold;
+  margin-far: 0.6em;
+}
+#text-container {
+  flex-grow: 1;
+}
+#footer {
+  color: #888888;
+  background-color: #eeeeff;
+  padding: 1.5rem;
+}
