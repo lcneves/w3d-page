@@ -1,0 +1,16 @@
+doctype html
+
+html
+  head
+    title= title
+    w3d-style(src= staticPath + '/stylesheets/theme.css')
+
+  body
+    include includes/header.pug
+
+    block content
+      include includes/main.pug
+
+    include includes/footer.pug
+
+    script(type='text/javascript' src= staticPath + '/scripts/w3d.js')

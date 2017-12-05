@@ -1,12 +1,4 @@
-doctype html
+extends layout.pug
 
-html
-  head
-    title= title
-    w3d-style(src= staticPath + '/stylesheets/theme.css')
-
-  body
-    include includes/header.pug
-    include includes/main.pug
-    include includes/footer.pug
-    script(type='text/javascript' src= staticPath + '/scripts/theme.js')
+block content
+  include includes/main.pug

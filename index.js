@@ -32,8 +32,12 @@ const renderOptions = {
 // Routing begins here
 app.use(STATIC_PATH, express.static(path.join(__dirname, PUBLIC_DIR)));
 
-app.get('*', function (req, res) {
+app.get('/', function (req, res) {
   res.render('index', renderOptions);
+});
+
+app.get('*', function (req, res) {
+  res.status(404).render('404', renderOptions);
 });
 
 // All set, let's listen!
