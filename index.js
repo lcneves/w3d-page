@@ -10,13 +10,16 @@
 
 'use strict';
 
-const config = require('config').get('config');
+const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'))
   .set('view engine', 'pug');
+
+const config = fs.existsSync(path.join(__dirname, 'config'))
+  ? require('config').get('config') : {};
 
 // Constant definitions
 const PORT = config.port || 80;
