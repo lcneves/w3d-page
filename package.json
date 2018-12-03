@@ -4,8 +4,10 @@
   "description": "Web page for the w3d project.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js"
+    "lint": "eslint *.js",
+    "push": "./scripts/docker-push.sh"
   },
   "repository": {
     "type": "git",
